@@ -3,6 +3,9 @@ Thumbs.db
 .DS_Store
 desktop.ini
 
+# Tailwind standalone build tool (~100MB binary — re-downloadable, not committed)
+tailwindcss.exe
+
 # 3D / motion source files — large media, not used by the live site
 assets/3d animation/
 
