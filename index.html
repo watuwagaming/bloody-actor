@@ -43,8 +43,8 @@
       --cyan:      #00E5FF;   /* sparingly, terminal only */
       --text-0:    #FFFFFF;
       --text-1:    #B7BED1;
-      --text-2:    #6E7691;
-      --text-3:    #404862;
+      --text-2:    #939CB4;
+      --text-3:    #5C6582;
     }
 
     * { font-family: 'Inter', sans-serif; }
@@ -96,7 +96,7 @@
     /* ─── TACTICAL LABEL ─── */
     .label-mono {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+      font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
       color: var(--text-2);
     }
     .label-mono .dot { display: inline-block; width: 6px; height: 6px; background: var(--pink); border-radius: 2px; margin-right: 8px; vertical-align: middle; }
@@ -106,7 +106,7 @@
       display: inline-flex; align-items: center; gap: 8px;
       padding: 6px 12px; border-radius: 999px;
       background: rgba(255,255,255,0.03); border: 1px solid var(--line);
-      font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
       color: var(--text-1);
     }
     .hud-pill .pulse { width: 7px; height: 7px; border-radius: 50%; background: #22FF88; box-shadow: 0 0 8px #22FF88; animation: pulseDot 1.6s ease-in-out infinite; }
@@ -143,8 +143,8 @@
 
     /* ─── FORM FIELDS ─── */
     .field-label {
-      font-family: 'JetBrains Mono', monospace; font-size: 10px;
-      letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-2);
+      font-family: 'JetBrains Mono', monospace; font-size: 12px;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-2);
       display: block; margin-bottom: 8px;
     }
     .field-input {
@@ -255,8 +255,8 @@
     /* ─── SECTION DIVIDER (industrial) ─── */
     .divider-mono {
       display: flex; align-items: center; gap: 12px;
-      font-family: 'JetBrains Mono', monospace; font-size: 11px;
-      letter-spacing: 0.25em; color: var(--text-2); text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace; font-size: 13px;
+      letter-spacing: 0.2em; color: var(--text-2); text-transform: uppercase;
     }
     .divider-mono::before, .divider-mono::after {
       content: ''; flex: 1; height: 1px; background: var(--line);
@@ -300,7 +300,7 @@
       </a>
 
       <!-- Desktop nav -->
-      <div class="hidden lg:flex items-center gap-1 font-mono text-[11px] tracking-[0.18em] uppercase text-[color:var(--text-1)]">
+      <div class="hidden lg:flex items-center gap-1 font-mono text-[13px] tracking-[0.18em] uppercase text-[color:var(--text-1)]">
         <a href="#work"          class="px-3 py-2 hover:text-white transition-colors">01_Operations</a>
         <a href="#casefile"      class="px-3 py-2 hover:text-white transition-colors">02_Case_File</a>
         <a href="#mission"       class="px-3 py-2 hover:text-white transition-colors">03_Mission</a>
@@ -372,7 +372,7 @@
           </p>
 
           <!-- Tactical capability pills -->
-          <div class="reveal reveal-delay-3 flex flex-wrap gap-2 mb-10 font-mono text-[10px] tracking-[0.18em] uppercase">
+          <div class="reveal reveal-delay-3 flex flex-wrap gap-2 mb-10 font-mono text-[12px] tracking-[0.18em] uppercase">
             <span class="px-3 py-1.5 rounded-md" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">ON-CAMERA</span>
             <span class="px-3 py-1.5 rounded-md" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">TECH</span>
             <span class="px-3 py-1.5 rounded-md" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">GAMING</span>
@@ -405,10 +405,10 @@
             <!-- HUD overlay -->
             <div class="absolute inset-0 pointer-events-none">
               <!-- corner tick marks -->
-              <div class="absolute top-3 left-3 font-mono text-[9px] tracking-[0.2em] text-white/70">+ 00:01:47:21</div>
-              <div class="absolute top-3 right-3 font-mono text-[9px] tracking-[0.2em] text-white/70">REC ●</div>
-              <div class="absolute bottom-20 left-3 font-mono text-[9px] tracking-[0.2em] text-white/70">FRAME / 0247</div>
-              <div class="absolute bottom-20 right-3 font-mono text-[9px] tracking-[0.2em] text-white/70">ISO 800 · f/2.8</div>
+              <div class="absolute top-3 left-3 font-mono text-[11px] tracking-[0.2em] text-white/70">+ 00:01:47:21</div>
+              <div class="absolute top-3 right-3 font-mono text-[11px] tracking-[0.2em] text-white/70">REC ●</div>
+              <div class="absolute bottom-20 left-3 font-mono text-[11px] tracking-[0.2em] text-white/70">FRAME / 0247</div>
+              <div class="absolute bottom-20 right-3 font-mono text-[11px] tracking-[0.2em] text-white/70">ISO 800 · f/2.8</div>
             </div>
 
             <!-- Identity card -->
@@ -416,11 +416,11 @@
               <div class="flex items-center gap-3">
                 <div class="w-9 h-9 pink-bg rounded-sm flex items-center justify-center font-display font-black text-sm">BA</div>
                 <div>
-                  <div class="font-mono text-[9px] tracking-[0.2em] text-[color:var(--text-2)]">OPERATOR_ID</div>
+                  <div class="font-mono text-[11px] tracking-[0.2em] text-[color:var(--text-2)]">OPERATOR_ID</div>
                   <div class="font-display text-sm font-bold">BRIAN_MBUGUA</div>
                 </div>
               </div>
-              <div class="font-mono text-[10px] text-[color:var(--text-1)] flex items-center gap-1.5">
+              <div class="font-mono text-[12px] text-[color:var(--text-1)] flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full pink-bg" style="box-shadow: 0 0 8px var(--pink-glow);"></span>
                 LIVE
               </div>
@@ -428,7 +428,7 @@
           </div>
 
           <!-- Side HUD label -->
-          <div class="hidden lg:block absolute -left-12 top-4 font-mono text-[9px] tracking-[0.3em] text-[color:var(--text-3)]" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+          <div class="hidden lg:block absolute -left-12 top-4 font-mono text-[11px] tracking-[0.3em] text-[color:var(--text-3)]" style="writing-mode: vertical-rl; transform: rotate(180deg);">
             FEED_01 // PRIMARY_OPERATOR
           </div>
         </div>
@@ -507,8 +507,8 @@
            class="reveal brackets sweep card-hover relative rounded-sm overflow-hidden block" style="background: var(--surface); border: 1px solid var(--line); aspect-ratio: 4/5;">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="absolute top-3 left-3 right-3 flex justify-between items-start z-10">
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)]">OP_01</span>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-pink">● FEATURED</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)]">OP_01</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-pink">● FEATURED</span>
           </div>
           <img src="assets/images/thumb-bloodyactor-yt.jpg" alt="Bloody Actor YouTube" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0" style="background: linear-gradient(to top, var(--bg-0) 6%, rgba(7,17,43,0.35) 50%, rgba(7,17,43,0.62) 100%);"></div>
@@ -518,9 +518,9 @@
             </div>
           </div>
           <div class="absolute bottom-0 left-0 right-0 p-5" style="background: linear-gradient(to top, var(--bg-0) 0%, transparent 100%);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">PASSION_PROJECT · PERSONAL_BRAND</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">PASSION_PROJECT · PERSONAL_BRAND</div>
             <div class="font-display font-bold text-sm md:text-base">Bloody Actor · YouTube</div>
-            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[9px] tracking-wider uppercase">
+            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[11px] tracking-wider uppercase">
               <span class="px-2 py-0.5 rounded" style="background: var(--pink); color: white;">FROM_ZERO</span>
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">LANDED_JOB</span>
             </div>
@@ -532,8 +532,8 @@
            class="reveal reveal-delay-1 brackets sweep card-hover relative rounded-sm overflow-hidden block" style="background: var(--surface); border: 1px solid var(--line); aspect-ratio: 4/5;">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="absolute top-3 left-3 right-3 flex justify-between items-start z-10">
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)]">OP_02</span>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-1)]">FOUNDED_BY_ME</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)]">OP_02</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-1)]">FOUNDED_BY_ME</span>
           </div>
           <img src="assets/images/thumb-wwg-yt.jpg" alt="Watu Wa Gaming YouTube" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0" style="background: linear-gradient(to top, var(--bg-0) 6%, rgba(7,17,43,0.35) 50%, rgba(7,17,43,0.62) 100%);"></div>
@@ -543,9 +543,9 @@
             </div>
           </div>
           <div class="absolute bottom-0 left-0 right-0 p-5" style="background: linear-gradient(to top, var(--bg-0) 0%, transparent 100%);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">GAMING_COMMUNITY</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">GAMING_COMMUNITY</div>
             <div class="font-display font-bold text-sm md:text-base">Watu Wa Gaming · YT</div>
-            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[9px] tracking-wider uppercase">
+            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[11px] tracking-wider uppercase">
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">COMMUNITY</span>
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">EAST_AFRICA</span>
             </div>
@@ -557,20 +557,20 @@
            class="reveal reveal-delay-2 brackets sweep card-hover relative rounded-sm overflow-hidden block" style="background: var(--surface); border: 1px solid var(--line); aspect-ratio: 4/5;">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="absolute top-3 left-3 right-3 flex justify-between items-start z-10">
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)]">OP_03</span>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-1)]">SHORT_FORM</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)]">OP_03</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-1)]">SHORT_FORM</span>
           </div>
           <div class="absolute inset-0 flex items-center justify-center">
             <div class="text-center p-6">
               <svg class="w-16 h-16 mx-auto mb-3 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/></svg>
               <p class="font-display font-bold tracking-wider">@watuwagaming</p>
-              <p class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] mt-1">TIKTOK</p>
+              <p class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] mt-1">TIKTOK</p>
             </div>
           </div>
           <div class="absolute bottom-0 left-0 right-0 p-5" style="background: linear-gradient(to top, var(--bg-0) 0%, transparent 100%);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">GAMING_COMMUNITY</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">GAMING_COMMUNITY</div>
             <div class="font-display font-bold text-sm md:text-base">Watu Wa Gaming · TT</div>
-            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[9px] tracking-wider uppercase">
+            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[11px] tracking-wider uppercase">
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">REELS</span>
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">VIRAL_LOOPS</span>
             </div>
@@ -582,8 +582,8 @@
            class="reveal brackets sweep card-hover relative rounded-sm overflow-hidden block" style="background: var(--surface); border: 1px solid var(--line); aspect-ratio: 4/5;">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="absolute top-3 left-3 right-3 flex justify-between items-start z-10">
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)]">OP_04</span>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-pink">● MANAGED</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)]">OP_04</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-pink">● MANAGED</span>
           </div>
           <img src="assets/images/thumb-esgaming-tt.jpg" alt="esGaming TikTok" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0" style="background: linear-gradient(to top, var(--bg-0) 6%, rgba(7,17,43,0.35) 50%, rgba(7,17,43,0.62) 100%);"></div>
@@ -593,9 +593,9 @@
             </div>
           </div>
           <div class="absolute bottom-0 left-0 right-0 p-5" style="background: linear-gradient(to top, var(--bg-0) 0%, transparent 100%);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">EMPLOYER · CONTENT_CREATOR_ROLE</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">EMPLOYER · CONTENT_CREATOR_ROLE</div>
             <div class="font-display font-bold text-sm md:text-base">esGaming · Managed TikTok</div>
-            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[9px] tracking-wider uppercase">
+            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[11px] tracking-wider uppercase">
               <span class="px-2 py-0.5 rounded" style="background: var(--pink); color: white;">EDUCATE_+_SELL</span>
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">PAID_ROLE</span>
             </div>
@@ -607,8 +607,8 @@
            class="reveal reveal-delay-1 brackets sweep card-hover relative rounded-sm overflow-hidden block md:col-span-2" style="background: var(--surface); border: 1px solid var(--line); min-height: 340px;">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="absolute top-3 left-3 right-3 flex justify-between items-start z-10">
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)]">OP_05</span>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-pink">● LIVE_DEPLOYMENT</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)]">OP_05</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-pink">● LIVE_DEPLOYMENT</span>
           </div>
           <!-- Live iframe preview of the actual site -->
           <div class="absolute inset-0 overflow-hidden" style="background: var(--bg-0);">
@@ -620,9 +620,9 @@
           <!-- live tag -->
           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hud-pill pink" style="z-index:3;"><span class="pulse"></span>LIVE SITE · EMBEDDED</div>
           <div class="absolute bottom-0 left-0 right-0 p-5" style="background: linear-gradient(to top, var(--bg-0) 0%, transparent 100%);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">BUILT // DEPLOYED // MAINTAINED_BY_ME</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] mb-1">BUILT // DEPLOYED // MAINTAINED_BY_ME</div>
             <div class="font-display font-bold text-base md:text-lg">Watu Wa Gaming · Web Platform</div>
-            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[9px] tracking-wider uppercase">
+            <div class="flex gap-1.5 mt-2 flex-wrap font-mono text-[11px] tracking-wider uppercase">
               <span class="px-2 py-0.5 rounded" style="background: var(--pink); color: white;">FULL_STACK</span>
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">PRODUCTION</span>
               <span class="px-2 py-0.5 rounded" style="background: rgba(255,255,255,0.08);">COMMUNITY_HUB</span>
@@ -730,7 +730,7 @@
               <p class="text-base leading-relaxed mb-4" style="color: var(--text-1);">
                 One person, the full stack of a media brand:
               </p>
-              <div class="flex flex-wrap gap-2 font-mono text-[10px] tracking-[0.15em] uppercase">
+              <div class="flex flex-wrap gap-2 font-mono text-[12px] tracking-[0.15em] uppercase">
                 <span class="px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">YouTube Channel</span>
                 <span class="px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">TikTok Channel</span>
                 <span class="px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">WWG News Format</span>
@@ -761,7 +761,7 @@
                 <p class="font-display font-bold text-lg md:text-xl leading-snug">
                   "I brought Brian on because he makes genuinely <span class="gradient-text">professional videos</span>. That was the deciding factor."
                 </p>
-                <p class="font-mono text-[10px] tracking-[0.2em] mt-4" style="color: var(--text-2);">HIRING MANAGER · ESGAMING</p>
+                <p class="font-mono text-[12px] tracking-[0.2em] mt-4" style="color: var(--text-2);">HIRING MANAGER · ESGAMING</p>
               </div>
 
               <!-- METRICS — replace [ ADD ] with your real figures -->
@@ -787,7 +787,7 @@
                   <div class="label-mono mt-1">COMMUNITY_SIZE</div>
                 </div>
               </div>
-              <p class="font-mono text-[10px] tracking-[0.15em] mt-3" style="color: var(--text-3);">// REPLACE [ ADD ] WITH REAL FIGURES — ROUGH NUMBERS ARE FINE, KEEP THEM HONEST</p>
+              <p class="font-mono text-[12px] tracking-[0.15em] mt-3" style="color: var(--text-3);">// REPLACE [ ADD ] WITH REAL FIGURES — ROUGH NUMBERS ARE FINE, KEEP THEM HONEST</p>
             </div>
           </div>
         </div>
@@ -804,7 +804,7 @@
               <p class="text-base leading-relaxed pl-4" style="color: var(--text-1); border-left: 2px solid var(--line-hot);">
                 If I restarted today I would lock a fixed publishing calendar from week one instead of finding the rhythm mid-flight, and wire up analytics earlier so every content call had data behind it. Next step: scaling the news format and bringing in contributors so the brand outgrows a one-person team.
               </p>
-              <p class="font-mono text-[10px] tracking-[0.15em] mt-3" style="color: var(--text-3);">// DRAFT — REWRITE IN YOUR OWN WORDS. HONEST REFLECTION SIGNALS YOU CAN LEARN.</p>
+              <p class="font-mono text-[12px] tracking-[0.15em] mt-3" style="color: var(--text-3);">// DRAFT — REWRITE IN YOUR OWN WORDS. HONEST REFLECTION SIGNALS YOU CAN LEARN.</p>
             </div>
           </div>
         </div>
@@ -840,11 +840,11 @@
 
           <!-- Tactical header bar -->
           <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color: var(--line); background: var(--bg-0);">
-            <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] uppercase">
+            <div class="flex items-center gap-2 font-mono text-[12px] tracking-[0.2em] uppercase">
               <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
               <span style="color: var(--text-2);">BROADCAST_01</span>
             </div>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
           </div>
 
           <!-- Desk setup & room tour: tech + on-camera + production -->
@@ -863,9 +863,9 @@
 
           <!-- Caption -->
           <div class="p-5 border-t" style="border-color: var(--line);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@bloodyactorx · SETUP_TOUR</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@bloodyactorx · SETUP_TOUR</div>
             <div class="font-display font-bold text-base">Productivity / Gaming Desk Setup &amp; Room Tour</div>
-            <div class="font-mono text-[10px] mt-2 flex gap-3" style="color: var(--text-2);">
+            <div class="font-mono text-[12px] mt-2 flex gap-3" style="color: var(--text-2);">
               <span>FORMAT / SETUP_TOUR</span>
               <span style="color: var(--text-3);">·</span>
               <span>YEAR / 2025</span>
@@ -877,11 +877,11 @@
         <div class="reveal reveal-delay-1 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color: var(--line); background: var(--bg-0);">
-            <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] uppercase">
+            <div class="flex items-center gap-2 font-mono text-[12px] tracking-[0.2em] uppercase">
               <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
               <span style="color: var(--text-2);">BROADCAST_02</span>
             </div>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
           </div>
           <!-- Tech review: latest brand collab -->
           <div class="relative" style="padding-bottom: 56.25%; height: 0;">
@@ -897,9 +897,9 @@
             </iframe>
           </div>
           <div class="p-5 border-t" style="border-color: var(--line);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@bloodyactorx · TECH_REVIEW</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@bloodyactorx · TECH_REVIEW</div>
             <div class="font-display font-bold text-base">MSI MAG 272QPF · 1440p 200Hz Monitor Review</div>
-            <div class="font-mono text-[10px] mt-2 flex gap-3" style="color: var(--text-2);">
+            <div class="font-mono text-[12px] mt-2 flex gap-3" style="color: var(--text-2);">
               <span>FORMAT / REVIEW</span>
               <span style="color: var(--text-3);">·</span>
               <span>COLLAB / esGaming</span>
@@ -913,11 +913,11 @@
         <div class="reveal brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color: var(--line); background: var(--bg-0);">
-            <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] uppercase">
+            <div class="flex items-center gap-2 font-mono text-[12px] tracking-[0.2em] uppercase">
               <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
               <span style="color: var(--text-2);">BROADCAST_03</span>
             </div>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
           </div>
           <!-- Viral commentary: hook-writing + opinion range -->
           <div class="relative" style="padding-bottom: 56.25%; height: 0;">
@@ -933,9 +933,9 @@
             </iframe>
           </div>
           <div class="p-5 border-t" style="border-color: var(--line);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@bloodyactorx · COMMENTARY</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@bloodyactorx · COMMENTARY</div>
             <div class="font-display font-bold text-base">Kenyan TikTok PC Sellers Are Out of Control</div>
-            <div class="font-mono text-[10px] mt-2 flex gap-3" style="color: var(--text-2);">
+            <div class="font-mono text-[12px] mt-2 flex gap-3" style="color: var(--text-2);">
               <span>FORMAT / OP-ED</span>
               <span style="color: var(--text-3);">·</span>
               <span>HOOK_DRIVEN</span>
@@ -949,11 +949,11 @@
         <div class="reveal reveal-delay-1 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color: var(--line); background: var(--bg-0);">
-            <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] uppercase">
+            <div class="flex items-center gap-2 font-mono text-[12px] tracking-[0.2em] uppercase">
               <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
               <span style="color: var(--text-2);">BROADCAST_04</span>
             </div>
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
+            <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ YOUTUBE</span>
           </div>
           <!-- Gaming news: from the community channel -->
           <div class="relative" style="padding-bottom: 56.25%; height: 0;">
@@ -969,9 +969,9 @@
             </iframe>
           </div>
           <div class="p-5 border-t" style="border-color: var(--line);">
-            <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@watuwagaming · GAMING_NEWS</div>
+            <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">@watuwagaming · GAMING_NEWS</div>
             <div class="font-display font-bold text-base">PS6 Pricing · GTA 6 Pre-Orders · Steam Controllers</div>
-            <div class="font-mono text-[10px] mt-2 flex gap-3" style="color: var(--text-2);">
+            <div class="font-mono text-[12px] mt-2 flex gap-3" style="color: var(--text-2);">
               <span>FORMAT / NEWS</span>
               <span style="color: var(--text-3);">·</span>
               <span>FOUNDED_BY_ME</span>
@@ -983,7 +983,7 @@
 
       </div>
 
-      <p class="reveal text-center mt-10 font-mono text-[11px] tracking-[0.18em] uppercase" style="color: var(--text-2);">
+      <p class="reveal text-center mt-10 font-mono text-[13px] tracking-[0.18em] uppercase" style="color: var(--text-2);">
         Want the full archive? <a href="https://www.youtube.com/@bloodyactorx" target="_blank" rel="noopener" class="text-pink hover:opacity-80">▶ BROWSE_CHANNEL</a>
       </p>
 
@@ -1007,11 +1007,11 @@
           <div class="reveal brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[12px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">NEWS_01</span>
               </div>
-              <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ LIVE</span>
+              <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ LIVE</span>
             </div>
             <div class="relative" style="padding-bottom: 56.25%; height: 0;">
               <iframe src="https://www.youtube-nocookie.com/embed/ogUnaXpyAVs"
@@ -1021,9 +1021,9 @@
                       class="absolute top-0 left-0 w-full h-full" style="border:0;"></iframe>
             </div>
             <div class="p-4 border-t" style="border-color: var(--line);">
-              <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">XBOX · BREAKING</div>
+              <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">XBOX · BREAKING</div>
               <div class="font-display font-bold text-sm leading-snug">Xbox Cancels Copilot AI for Series X|S</div>
-              <div class="font-mono text-[10px] mt-2" style="color: var(--text-2);">MAY · 2026</div>
+              <div class="font-mono text-[12px] mt-2" style="color: var(--text-2);">MAY · 2026</div>
             </div>
           </div>
 
@@ -1031,11 +1031,11 @@
           <div class="reveal reveal-delay-1 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[12px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">NEWS_02</span>
               </div>
-              <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ LIVE</span>
+              <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ LIVE</span>
             </div>
             <div class="relative" style="padding-bottom: 56.25%; height: 0;">
               <iframe src="https://www.youtube-nocookie.com/embed/sUIszX6T3zg"
@@ -1045,9 +1045,9 @@
                       class="absolute top-0 left-0 w-full h-full" style="border:0;"></iframe>
             </div>
             <div class="p-4 border-t" style="border-color: var(--line);">
-              <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">SONY · MULTI-PLATFORM</div>
+              <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">SONY · MULTI-PLATFORM</div>
               <div class="font-display font-bold text-sm leading-snug">PlayStation DRM · Steam Deck 2 · Xbox Shift</div>
-              <div class="font-mono text-[10px] mt-2" style="color: var(--text-2);">MAY · 2026</div>
+              <div class="font-mono text-[12px] mt-2" style="color: var(--text-2);">MAY · 2026</div>
             </div>
           </div>
 
@@ -1055,11 +1055,11 @@
           <div class="reveal reveal-delay-2 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[12px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">NEWS_03</span>
               </div>
-              <span class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ LIVE</span>
+              <span class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">▶ LIVE</span>
             </div>
             <div class="relative" style="padding-bottom: 56.25%; height: 0;">
               <iframe src="https://www.youtube-nocookie.com/embed/8ku27V1Dii4"
@@ -1069,14 +1069,14 @@
                       class="absolute top-0 left-0 w-full h-full" style="border:0;"></iframe>
             </div>
             <div class="p-4 border-t" style="border-color: var(--line);">
-              <div class="font-mono text-[10px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">CYBERPUNK · POP_CULTURE</div>
+              <div class="font-mono text-[12px] tracking-[0.2em] text-[color:var(--text-2)] uppercase mb-1">CYBERPUNK · POP_CULTURE</div>
               <div class="font-display font-bold text-sm leading-snug">Edgerunners S2 is Real! Teaser Breakdown + DLC</div>
-              <div class="font-mono text-[10px] mt-2" style="color: var(--text-2);">JUL · 2025</div>
+              <div class="font-mono text-[12px] mt-2" style="color: var(--text-2);">JUL · 2025</div>
             </div>
           </div>
         </div>
 
-        <p class="reveal text-center mt-8 font-mono text-[11px] tracking-[0.18em] uppercase" style="color: var(--text-2);">
+        <p class="reveal text-center mt-8 font-mono text-[13px] tracking-[0.18em] uppercase" style="color: var(--text-2);">
           Watch the full news series · <a href="https://www.youtube.com/@watuwagaming" target="_blank" rel="noopener" class="text-pink hover:opacity-80">▶ @watuwagaming</a>
         </p>
       </div>
@@ -1097,7 +1097,7 @@
         </div>
 
         <!-- Paid-role banner -->
-        <div class="reveal mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-sm font-mono text-[10px] tracking-[0.2em] uppercase"
+        <div class="reveal mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-sm font-mono text-[12px] tracking-[0.2em] uppercase"
              style="background: rgba(255,25,87,0.08); border: 1px solid var(--line-hot); color: var(--text-1);">
           <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
           <span>PAID_ROLE · CONTENT_CREATOR @ ESGAMING · MANDATE: EDUCATE + DRIVE_SALES</span>
@@ -1110,11 +1110,11 @@
           <div class="reveal brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-3 py-2 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[9px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[11px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">DROP_01</span>
               </div>
-              <span class="font-mono text-[9px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
+              <span class="font-mono text-[11px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
             </div>
             <div class="relative" style="aspect-ratio: 9/16; background: var(--bg-0);">
               <iframe src="https://www.tiktok.com/embed/v2/7424531376025750790"
@@ -1129,11 +1129,11 @@
           <div class="reveal reveal-delay-1 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-3 py-2 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[9px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[11px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">DROP_02</span>
               </div>
-              <span class="font-mono text-[9px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
+              <span class="font-mono text-[11px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
             </div>
             <div class="relative" style="aspect-ratio: 9/16; background: var(--bg-0);">
               <iframe src="https://www.tiktok.com/embed/v2/7617448905956953362"
@@ -1148,11 +1148,11 @@
           <div class="reveal reveal-delay-2 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-3 py-2 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[9px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[11px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">DROP_03</span>
               </div>
-              <span class="font-mono text-[9px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
+              <span class="font-mono text-[11px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
             </div>
             <div class="relative" style="aspect-ratio: 9/16; background: var(--bg-0);">
               <iframe src="https://www.tiktok.com/embed/v2/7527912365858327813"
@@ -1167,11 +1167,11 @@
           <div class="reveal reveal-delay-3 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-3 py-2 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[9px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[11px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">DROP_04</span>
               </div>
-              <span class="font-mono text-[9px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
+              <span class="font-mono text-[11px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
             </div>
             <div class="relative" style="aspect-ratio: 9/16; background: var(--bg-0);">
               <iframe src="https://www.tiktok.com/embed/v2/7463405863898713349"
@@ -1186,11 +1186,11 @@
           <div class="reveal reveal-delay-4 brackets relative rounded-sm overflow-hidden" style="background: var(--surface); border: 1px solid var(--line);">
             <span class="b-bl"></span><span class="b-br"></span>
             <div class="flex items-center justify-between px-3 py-2 border-b" style="border-color: var(--line); background: var(--bg-0);">
-              <div class="flex items-center gap-2 font-mono text-[9px] tracking-[0.2em] uppercase">
+              <div class="flex items-center gap-2 font-mono text-[11px] tracking-[0.2em] uppercase">
                 <span class="w-1.5 h-1.5 pink-bg rounded-full"></span>
                 <span style="color: var(--text-2);">DROP_05</span>
               </div>
-              <span class="font-mono text-[9px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
+              <span class="font-mono text-[11px] tracking-[0.2em] text-[color:var(--text-2)] uppercase">TIKTOK</span>
             </div>
             <div class="relative" style="aspect-ratio: 9/16; background: var(--bg-0);">
               <iframe src="https://www.tiktok.com/embed/v2/7423701409851280645"
@@ -1203,7 +1203,7 @@
 
         </div>
 
-        <p class="reveal text-center mt-8 font-mono text-[11px] tracking-[0.18em] uppercase" style="color: var(--text-2);">
+        <p class="reveal text-center mt-8 font-mono text-[13px] tracking-[0.18em] uppercase" style="color: var(--text-2);">
           Full TikTok library · <a href="https://www.tiktok.com/@watuwagaming" target="_blank" rel="noopener" class="text-pink hover:opacity-80">▶ @watuwagaming</a> &nbsp;//&nbsp; <a href="https://www.tiktok.com/@esgaming.co.ke" target="_blank" rel="noopener" class="text-pink hover:opacity-80">▶ @esgaming.co.ke</a>
         </p>
       </div>
@@ -1252,7 +1252,7 @@
               <div class="flex justify-between items-baseline mb-2">
                 <div>
                   <div class="font-display font-bold text-sm">esGaming · Weekly Reel Series</div>
-                  <div class="font-mono text-[10px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: EDIT &nbsp;·&nbsp; PLATFORM: TIKTOK</div>
+                  <div class="font-mono text-[12px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: EDIT &nbsp;·&nbsp; PLATFORM: TIKTOK</div>
                 </div>
                 <span class="font-mono text-xs text-pink">78%</span>
               </div>
@@ -1263,7 +1263,7 @@
               <div class="flex justify-between items-baseline mb-2">
                 <div>
                   <div class="font-display font-bold text-sm">Watu Wa Gaming · Monthly Recap</div>
-                  <div class="font-mono text-[10px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: SHOOT &nbsp;·&nbsp; PLATFORM: YOUTUBE</div>
+                  <div class="font-mono text-[12px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: SHOOT &nbsp;·&nbsp; PLATFORM: YOUTUBE</div>
                 </div>
                 <span class="font-mono text-xs text-pink">45%</span>
               </div>
@@ -1274,7 +1274,7 @@
               <div class="flex justify-between items-baseline mb-2">
                 <div>
                   <div class="font-display font-bold text-sm">Bloody Actor · Long-form Doc</div>
-                  <div class="font-mono text-[10px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: PRE-PROD &nbsp;·&nbsp; PLATFORM: YOUTUBE</div>
+                  <div class="font-mono text-[12px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: PRE-PROD &nbsp;·&nbsp; PLATFORM: YOUTUBE</div>
                 </div>
                 <span class="font-mono text-xs text-pink">22%</span>
               </div>
@@ -1285,7 +1285,7 @@
               <div class="flex justify-between items-baseline mb-2">
                 <div>
                   <div class="font-display font-bold text-sm">Tech Review · Gaming Monitor</div>
-                  <div class="font-mono text-[10px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: PUBLISH &nbsp;·&nbsp; PLATFORM: YOUTUBE</div>
+                  <div class="font-mono text-[12px] tracking-wider text-[color:var(--text-2)] mt-0.5">PHASE: PUBLISH &nbsp;·&nbsp; PLATFORM: YOUTUBE</div>
                 </div>
                 <span class="font-mono text-xs text-pink">91%</span>
               </div>
@@ -1295,7 +1295,7 @@
           </div>
 
           <!-- Phase legend -->
-          <div class="mt-8 pt-6 border-t flex flex-wrap gap-4 font-mono text-[10px] tracking-[0.18em] uppercase" style="border-color: var(--line); color: var(--text-2);">
+          <div class="mt-8 pt-6 border-t flex flex-wrap gap-4 font-mono text-[12px] tracking-[0.18em] uppercase" style="border-color: var(--line); color: var(--text-2);">
             <span>5 PHASES:</span>
             <span>01_RESEARCH</span><span>→</span>
             <span>02_SHOOT</span><span>→</span>
@@ -1333,25 +1333,25 @@
               <span class="b-bl"></span><span class="b-br"></span>
               <div class="label-mono mb-2">UPTIME</div>
               <div class="font-display font-black text-2xl">99.8<span class="text-pink">%</span></div>
-              <div class="font-mono text-[10px] mt-1" style="color: var(--text-2);">DELIVERY RATE</div>
+              <div class="font-mono text-[12px] mt-1" style="color: var(--text-2);">DELIVERY RATE</div>
             </div>
             <div class="brackets p-5 rounded-sm" style="background: var(--surface); border: 1px solid var(--line);">
               <span class="b-bl"></span><span class="b-br"></span>
               <div class="label-mono mb-2">LATENCY</div>
               <div class="font-display font-black text-2xl">&lt; 24<span class="text-pink">h</span></div>
-              <div class="font-mono text-[10px] mt-1" style="color: var(--text-2);">RESPONSE TIME</div>
+              <div class="font-mono text-[12px] mt-1" style="color: var(--text-2);">RESPONSE TIME</div>
             </div>
             <div class="brackets p-5 rounded-sm" style="background: var(--surface); border: 1px solid var(--line);">
               <span class="b-bl"></span><span class="b-br"></span>
               <div class="label-mono mb-2">RENDER_Q</div>
               <div class="font-display font-black text-2xl">04</div>
-              <div class="font-mono text-[10px] mt-1" style="color: var(--text-2);">IN QUEUE</div>
+              <div class="font-mono text-[12px] mt-1" style="color: var(--text-2);">IN QUEUE</div>
             </div>
             <div class="brackets p-5 rounded-sm" style="background: var(--surface); border: 1px solid var(--line);">
               <span class="b-bl"></span><span class="b-br"></span>
               <div class="label-mono mb-2">OUTPUT</div>
               <div class="font-display font-black text-2xl">20<span class="text-pink">/wk</span></div>
-              <div class="font-mono text-[10px] mt-1" style="color: var(--text-2);">CONTENT UNITS</div>
+              <div class="font-mono text-[12px] mt-1" style="color: var(--text-2);">CONTENT UNITS</div>
             </div>
           </div>
         </div>
@@ -1487,42 +1487,42 @@
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">📹</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Canon</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Canon</p>
         </div>
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">🎞️</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">DaVinci</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">DaVinci</p>
         </div>
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">🎬</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Premiere</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Premiere</p>
         </div>
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">🖼️</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Photoshop</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Photoshop</p>
         </div>
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">✏️</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Illustrator</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Illustrator</p>
         </div>
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">🔴</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Streaming</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Streaming</p>
         </div>
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">📊</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Analytics</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Analytics</p>
         </div>
         <div class="brackets p-4 rounded-sm text-center" style="background: var(--surface); border: 1px solid var(--line);">
           <span class="b-bl"></span><span class="b-br"></span>
           <div class="text-3xl mb-2">🎨</div>
-          <p class="font-mono text-[10px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Motion GFX</p>
+          <p class="font-mono text-[12px] tracking-[0.15em] text-[color:var(--text-1)] uppercase">Motion GFX</p>
         </div>
       </div>
     </div>
@@ -1544,12 +1544,12 @@
           <div class="brackets scan relative aspect-[4/5] rounded-sm overflow-hidden" style="background: var(--surface);">
             <span class="b-bl"></span><span class="b-br"></span>
             <img src="assets/images/profile.jpg" alt="Brian Mbugua" class="absolute inset-0 w-full h-full object-cover">
-            <div class="absolute top-3 left-3 right-3 flex justify-between font-mono text-[9px] tracking-[0.2em] text-white/80">
+            <div class="absolute top-3 left-3 right-3 flex justify-between font-mono text-[11px] tracking-[0.2em] text-white/80">
               <span>ID / 002</span>
               <span>● OPERATOR</span>
             </div>
             <div class="absolute bottom-3 left-3 right-3 glass rounded-sm p-3" style="background: rgba(7,17,43,0.85);">
-              <div class="font-mono text-[9px] tracking-[0.2em] text-[color:var(--text-2)]">CLASSIFICATION</div>
+              <div class="font-mono text-[11px] tracking-[0.2em] text-[color:var(--text-2)]">CLASSIFICATION</div>
               <div class="font-display font-bold">CONTENT_SPECIALIST</div>
             </div>
           </div>
@@ -1576,15 +1576,15 @@
 
           <!-- Skill chips -->
           <div class="flex flex-wrap gap-2 mt-8">
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">On-Camera</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Video Production</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Editing</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Tech Reviews</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Live Streaming</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Strategy</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Community</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Web</span>
-            <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Motion Graphics</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">On-Camera</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Video Production</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Editing</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Tech Reviews</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Live Streaming</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Strategy</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Community</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Web</span>
+            <span class="font-mono text-[12px] tracking-[0.18em] uppercase px-3 py-1.5 rounded" style="background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: var(--text-1);">Motion Graphics</span>
           </div>
         </div>
       </div>
@@ -1620,7 +1620,7 @@
 
           <div class="flex items-center justify-between mb-6">
             <div class="label-mono"><span class="dot"></span>NEW_TRANSMISSION</div>
-            <span class="font-mono text-[10px] tracking-[0.2em]" style="color: var(--text-3);">SECURE_CHANNEL</span>
+            <span class="font-mono text-[12px] tracking-[0.2em]" style="color: var(--text-3);">SECURE_CHANNEL</span>
           </div>
 
           <div class="grid sm:grid-cols-2 gap-4 mb-4">
@@ -1648,7 +1648,7 @@
             <span class="font-display tracking-wider">SEND_TRANSMISSION</span>
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </button>
-          <p id="form-note" class="font-mono text-[11px] mt-4 hidden"></p>
+          <p id="form-note" class="font-mono text-[13px] mt-4 hidden"></p>
         </form>
 
         <!-- DIRECT CHANNELS -->
@@ -1677,15 +1677,15 @@
             <div class="label-mono mb-4">OPERATOR_STATUS</div>
             <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="font-mono text-[10px] tracking-[0.18em]" style="color: var(--text-2);">AVAILABILITY</span>
+                <span class="font-mono text-[12px] tracking-[0.18em]" style="color: var(--text-2);">AVAILABILITY</span>
                 <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400" style="box-shadow: 0 0 8px #22FF88;"></span><span class="font-display font-bold text-xs">AVAILABLE</span></span>
               </div>
               <div class="flex items-center justify-between">
-                <span class="font-mono text-[10px] tracking-[0.18em]" style="color: var(--text-2);">LOCATION</span>
+                <span class="font-mono text-[12px] tracking-[0.18em]" style="color: var(--text-2);">LOCATION</span>
                 <span class="font-display font-bold text-xs">NAIROBI · GLOBAL</span>
               </div>
               <div class="flex items-center justify-between">
-                <span class="font-mono text-[10px] tracking-[0.18em]" style="color: var(--text-2);">RESPONSE</span>
+                <span class="font-mono text-[12px] tracking-[0.18em]" style="color: var(--text-2);">RESPONSE</span>
                 <span class="font-display font-bold text-xs">&lt; 24 HOURS</span>
               </div>
             </div>
@@ -1712,7 +1712,7 @@
 
   <!-- ═════════════════════════════ FOOTER ═════════════════════════════ -->
   <footer class="relative py-10 border-t" style="border-color: var(--line); background: var(--bg-1);">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-[10px] tracking-[0.2em] uppercase" style="color: var(--text-2);">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-[12px] tracking-[0.2em] uppercase" style="color: var(--text-2);">
       <div class="flex items-center gap-3">
         <span class="w-2 h-2 pink-bg rounded-sm"></span>
         <span>BLOODY_ACTOR / BRIAN_MBUGUA / EST. NAIROBI</span>
