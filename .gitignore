@@ -1,0 +1,15 @@
+# OS / editor junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# 3D / motion source files — large media, not used by the live site
+assets/3d animation/
+
+# Original source photos — kept locally, not needed for the deployed site
+assets/images/2026 Headshot.jpg
+assets/images/26 passport.jpg
+assets/images/DSC03087.jpg
+assets/images/IMG_9969_2.jpg
+assets/images/IMG_9973_3.jpg
+assets/images/WhatsApp Image*
