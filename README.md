@@ -10,7 +10,7 @@ There is one optional build step — generating the CSS — covered below.
 
 ## Live site
 
-- **URL:** http://206.189.105.68
+- **URL:** https://bloodyactor.com (IP fallback: http://206.189.105.68)
 - **Host:** DigitalOcean droplet, nginx serving `/var/www/bloody-actor`
 - **Repo:** https://github.com/watuwagaming/bloody-actor
 
