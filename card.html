@@ -68,10 +68,14 @@
     color: var(--pink); font-weight: 700;
   }
   .front-name {
-    font-size: 24px; font-weight: 900; letter-spacing: -0.02em;
+    font-size: 26px; font-weight: 900; letter-spacing: -0.02em;
     line-height: 1; color: #fff;
   }
   .front-name .last { color: var(--pink); }
+  .front-realname {
+    font-size: 9px; font-weight: 600; letter-spacing: 0.22em;
+    text-transform: uppercase; color: #aab2c6; margin-top: 2mm;
+  }
   .front-rule { width: 14mm; height: 0.9mm; background: var(--pink); margin: 2mm 0 1.5mm; }
   .front-role {
     font-family: 'JetBrains Mono', monospace;
@@ -103,12 +107,17 @@
 
   .back-info { display: flex; flex-direction: column; justify-content: center; gap: 1.6mm; min-width: 0; }
   .back-name {
-    font-size: 11.5px; font-weight: 900; color: var(--navy); letter-spacing: -0.01em; line-height: 1;
+    font-size: 13px; font-weight: 900; color: var(--navy); letter-spacing: -0.01em; line-height: 1;
+  }
+  .back-name .last { color: var(--pink); }
+  .back-realname {
+    font-size: 7.5px; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--muted); margin-top: 1mm;
   }
   .back-role {
     font-family: 'JetBrains Mono', monospace;
     font-size: 6.5px; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--pink); font-weight: 700; margin-top: 0.8mm;
+    color: var(--pink); font-weight: 700; margin-top: 1mm;
   }
   .back-divider { width: 8mm; height: 0.5mm; background: var(--pink); margin: 1mm 0 1.2mm; }
 
@@ -155,12 +164,13 @@
       <div class="front-tag">Operator // KE</div>
     </div>
     <div>
-      <div class="front-name">BRIAN<br><span class="last">MBUGUA</span></div>
+      <div class="front-name">BLOODY<br><span class="last">ACTOR</span></div>
+      <div class="front-realname">Brian Mbugua</div>
       <div class="front-rule"></div>
       <div class="front-role">Social Media Content Creator<br>On Camera Talent · Video Producer</div>
     </div>
     <div class="front-foot">
-      <span>Bloody Actor</span>
+      <span>bloodyactor.com</span>
       <span class="id">ID // 254</span>
     </div>
   </div>
@@ -172,8 +182,9 @@
       <img src="assets/qr-site.svg" alt="QR to bloodyactor.com">
     </div>
     <div class="back-info">
-      <div class="back-name">BRIAN MBUGUA</div>
-      <div class="back-role">Bloody Actor // Creator</div>
+      <div class="back-name">BLOODY <span class="last">ACTOR</span></div>
+      <div class="back-realname">Brian Mbugua</div>
+      <div class="back-role">Social Media · On Camera</div>
       <div class="back-divider"></div>
 
       <div class="row"><span class="ic">✦</span><a href="mailto:bloodyactor@gmail.com">bloodyactor@gmail.com</a></div>
