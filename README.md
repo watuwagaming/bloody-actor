@@ -1,6 +1,6 @@
 # Bloody Actor — Portfolio Site
 
-Brian Mbugua's portfolio site — a tactical, single-page site positioning him as a
+Bloody Actor's portfolio site — a tactical, single-page site positioning the brand as a
 **content creator specialist** for gaming and tech brands.
 
 The deployed site is **fully static** (HTML + one CSS file + a little vanilla JS).
