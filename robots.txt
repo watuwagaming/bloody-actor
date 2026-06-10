@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cv.html
+Disallow: /card.html
+
+Sitemap: https://bloodyactor.com/sitemap.xml
