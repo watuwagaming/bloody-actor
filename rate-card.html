@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Rate Card 2026 — Bloody Actor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ───────────────────────────────────────────────
+     BLOODY ACTOR — RATE CARD 2026
+     Print to PDF:  open this file, Ctrl+P, "Save as PDF",
+     paper A4, margins None, "Background graphics" ON.
+     Flows to 2 pages by design. Sections never split.
+     ─────────────────────────────────────────────── */
+  :root {
+    --navy:   #0B1A3E;
+    --navy-2: #15224A;
+    --pink:   #FF1957;
+    --ink:    #1c2333;
+    --muted:  #5b6478;
+    --line:   #e3e6ee;
+    --tint:   #f4f5f9;
+    --tint-2: #fafbfd;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #525664; }
+  body { font-family: 'Inter', sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  .page { width: 210mm; margin: 24px auto; background: #fff; box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+
+  /* ─── HEADER BAND ─── */
+  .head { background: var(--navy); color: #fff; padding: 13mm 14mm 11mm; position: relative; }
+  .head::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--pink); }
+  .wordmark { font-size: 34px; font-weight: 900; letter-spacing: -0.02em; line-height: 1; }
+  .wordmark .last { color: var(--pink); }
+  .head-sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #aab2c6; margin-top: 9px; line-height: 1.6;
+  }
+  .head-sub .pink { color: var(--pink); font-weight: 700; }
+  .head-contact {
+    font-size: 10.5px; color: #d6dae6; margin-top: 11px; padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.14); line-height: 1.6;
+  }
+  .head-contact .sep { color: #4a5878; margin: 0 6px; }
+
+  /* ─── BODY ─── */
+  .body { padding: 10mm 14mm 12mm; }
+
+  .sec {
+    margin-bottom: 9mm;
+    page-break-inside: avoid; break-inside: avoid;
+  }
+  .sec:last-child { margin-bottom: 0; }
+
+  .sec-title {
+    font-size: 13px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--navy); margin-bottom: 3mm; display: flex; align-items: center; gap: 9px;
+  }
+  .sec-title::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+  .sec-note { font-size: 10.5px; color: var(--muted); line-height: 1.5; margin-bottom: 3mm; }
+
+  /* ─── PROOF STRIP ─── */
+  .proof { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+  .pf { background: var(--tint); border-left: 3px solid var(--pink); padding: 3mm 3.5mm; }
+  .pf-num { font-size: 19px; font-weight: 900; color: var(--navy); line-height: 1; }
+  .pf-lab { font-size: 8.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-top: 2mm; line-height: 1.35; }
+
+  /* ─── TABLES ─── */
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    background: var(--navy); color: #fff; text-align: left;
+    font-family: 'JetBrains Mono', monospace; font-size: 8.5px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; padding: 2.5mm 3.5mm;
+  }
+  thead th.num { text-align: right; }
+  tbody td { padding: 2.6mm 3.5mm; font-size: 10.5px; line-height: 1.45; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: var(--tint-2); }
+  tbody tr:last-child td { border-bottom: none; }
+  .t-name { font-weight: 700; color: var(--navy); white-space: nowrap; }
+  .t-desc { color: #414960; }
+  .t-price {
+    text-align: right; white-space: nowrap;
+    font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 11px; color: var(--navy);
+  }
+  .t-price .cur { font-size: 8.5px; color: var(--muted); font-weight: 600; margin-right: 2px; }
+
+  /* Featured row (best value) */
+  tbody tr.feat td { background: rgba(255,25,87,0.06); }
+  tbody tr.feat .t-name { color: var(--pink); }
+  .tag {
+    display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 7.5px;
+    letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700;
+    background: var(--pink); color: #fff; padding: 1px 5px; margin-left: 5px; vertical-align: 1px;
+  }
+
+  /* ─── TERMS ─── */
+  .terms { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 7mm; }
+  .term { font-size: 10.5px; line-height: 1.5; color: #414960; padding-left: 13px; position: relative; }
+  .term::before { content: ''; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; background: var(--pink); border-radius: 50%; }
+  .term strong { color: var(--navy); font-weight: 700; }
+
+  /* ─── INTEGRITY CALLOUT ─── */
+  .callout { background: var(--tint); border-left: 3px solid var(--pink); padding: 4mm 4.5mm; }
+  .callout-title {
+    font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--pink); font-weight: 700; margin-bottom: 2mm;
+  }
+  .callout p { font-size: 10.5px; line-height: 1.55; color: #38415a; }
+
+  /* ─── FOOTER ─── */
+  .foot {
+    margin-top: 9mm; padding-top: 5mm; border-top: 1px solid var(--line);
+    display: flex; align-items: center; gap: 5mm;
+    page-break-inside: avoid; break-inside: avoid;
+  }
+  .foot-qr { width: 20mm; height: 20mm; flex-shrink: 0; }
+  .foot-qr img { width: 100%; height: 100%; display: block; }
+  .foot-copy { flex: 1; }
+  .foot-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 8.5px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--pink); font-weight: 700;
+  }
+  .foot-line { font-size: 12.5px; font-weight: 800; color: var(--navy); margin-top: 1.5mm; }
+  .foot-sub { font-size: 10px; color: var(--muted); margin-top: 1.5mm; line-height: 1.45; }
+  .foot-valid {
+    font-family: 'JetBrains Mono', monospace; font-size: 8.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted); text-align: right; white-space: nowrap;
+  }
+
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; box-shadow: none; width: 210mm; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ════════ HEADER ════════ -->
+  <header class="head">
+    <div class="wordmark">BLOODY <span class="last">ACTOR</span></div>
+    <div class="head-sub">
+      Tech Content Creation &amp; Product Review <span class="pink">·</span> Rate Card 2026<br>
+      Audience: Kenyan gamers <span class="pink">·</span> PC builders <span class="pink">·</span> Tech buyers
+    </div>
+    <div class="head-contact">
+      bloodyactor@gmail.com <span class="sep">·</span> WhatsApp +254 711 777 606 <span class="sep">·</span> bloodyactor.com <span class="sep">·</span> youtube.com/@bloodyactorx
+    </div>
+  </header>
+
+  <div class="body">
+
+    <!-- ════════ PROOF ════════ -->
+    <section class="sec">
+      <div class="sec-title">The Audience You Are Buying</div>
+      <div class="proof">
+        <div class="pf"><div class="pf-num">2.3M</div><div class="pf-lab">YouTube impressions</div></div>
+        <div class="pf"><div class="pf-num">259K</div><div class="pf-lab">Total video views</div></div>
+        <div class="pf"><div class="pf-num">13.5K</div><div class="pf-lab">Hours watched</div></div>
+        <div class="pf"><div class="pf-num">4K+</div><div class="pf-lab">Discord community</div></div>
+      </div>
+      <div class="sec-note" style="margin-top:3mm; margin-bottom:0;">
+        I also run a managed brand account in this exact category: 519,000 video views and 13,000 plus
+        engagements over a rolling 12 month window. This is not a hobby channel. It is a tested
+        distribution channel for gaming and tech products.
+      </div>
+    </section>
+
+    <!-- ════════ SPONSORED PACKAGES ════════ -->
+    <section class="sec">
+      <div class="sec-title">Sponsored Packages</div>
+      <div class="sec-note">Produced by me and published to my channels. Your product reaches my audience directly.</div>
+      <table>
+        <thead>
+          <tr><th>Package</th><th>What you get</th><th class="num">Rate</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="t-name">Single Short</td>
+            <td class="t-desc">One video, 60 to 90 seconds, published on one platform</td>
+            <td class="t-price"><span class="cur">KES</span>10,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Short Pack 3</td>
+            <td class="t-desc">Three videos across YouTube Shorts, TikTok, and Reels</td>
+            <td class="t-price"><span class="cur">KES</span>25,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Short Pack 5</td>
+            <td class="t-desc">Five videos, multi platform, staggered over two weeks</td>
+            <td class="t-price"><span class="cur">KES</span>40,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Dedicated Review</td>
+            <td class="t-desc">Full 5 to 10 minute YouTube review, scripted, shot, and edited</td>
+            <td class="t-price"><span class="cur">KES</span>25,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Review + Short</td>
+            <td class="t-desc">Dedicated review plus one short cut for YouTube Shorts or TikTok</td>
+            <td class="t-price"><span class="cur">KES</span>30,000</td>
+          </tr>
+          <tr class="feat">
+            <td class="t-name">Review + Social<span class="tag">Popular</span></td>
+            <td class="t-desc">Dedicated review plus three shorts across YouTube, TikTok, and Reels</td>
+            <td class="t-price"><span class="cur">KES</span>45,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Full Campaign</td>
+            <td class="t-desc">Review, three shorts, ten edited product photos, and full social coverage</td>
+            <td class="t-price"><span class="cur">KES</span>60,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ════════ RETAINERS ════════ -->
+    <section class="sec">
+      <div class="sec-title">Monthly Retainers</div>
+      <div class="sec-note">
+        For brands that need consistent presence rather than one off posts. Better rate per deliverable,
+        priority in my schedule, and a content plan built around your product line. Minimum three months.
+      </div>
+      <table>
+        <thead>
+          <tr><th>Retainer</th><th>Per month</th><th class="num">Rate / month</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="t-name">Starter</td>
+            <td class="t-desc">Two shorts per month, one platform each</td>
+            <td class="t-price"><span class="cur">KES</span>18,000</td>
+          </tr>
+          <tr class="feat">
+            <td class="t-name">Growth<span class="tag">Best value</span></td>
+            <td class="t-desc">Four shorts plus one dedicated review per month</td>
+            <td class="t-price"><span class="cur">KES</span>50,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Partner</td>
+            <td class="t-desc">Eight shorts, two dedicated reviews, and ten product photos per month</td>
+            <td class="t-price"><span class="cur">KES</span>100,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ════════ PRODUCTION ONLY ════════ -->
+    <section class="sec">
+      <div class="sec-title">Production Only</div>
+      <div class="sec-note">
+        I produce the content, you publish it on your own channels. No access to my audience,
+        so it prices lower than a sponsored package.
+      </div>
+      <table>
+        <thead>
+          <tr><th>Deliverable</th><th>What you get</th><th class="num">Rate</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="t-name">Commercial Video</td>
+            <td class="t-desc">Polished product video for your channels and ads</td>
+            <td class="t-price"><span class="cur">KES</span>15,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Unboxing Video</td>
+            <td class="t-desc">Clean unboxing and first look, delivered as a file</td>
+            <td class="t-price"><span class="cur">KES</span>10,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Product Photos</td>
+            <td class="t-desc">Five edited product photos, web and social ready</td>
+            <td class="t-price"><span class="cur">KES</span>5,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Product Photos</td>
+            <td class="t-desc">Ten edited product photos, web and social ready</td>
+            <td class="t-price"><span class="cur">KES</span>8,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Hero Banners</td>
+            <td class="t-desc">Banner images sized for your site, store, and socials</td>
+            <td class="t-price"><span class="cur">KES</span>10,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ════════ ADD ONS ════════ -->
+    <section class="sec">
+      <div class="sec-title">Add Ons</div>
+      <table>
+        <thead>
+          <tr><th>Add on</th><th>Detail</th><th class="num">Rate</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="t-name">Rush Delivery</td>
+            <td class="t-desc">Turnaround inside 48 to 72 hours, subject to availability</td>
+            <td class="t-price">+<span class="cur">KES</span>5,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Raw Footage</td>
+            <td class="t-desc">All source files handed over for your own use</td>
+            <td class="t-price">+<span class="cur">KES</span>10,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Extra Revision</td>
+            <td class="t-desc">Per additional round beyond the two included</td>
+            <td class="t-price">+<span class="cur">KES</span>2,500</td>
+          </tr>
+          <tr>
+            <td class="t-name">Thumbnail Design</td>
+            <td class="t-desc">Custom thumbnail for your own upload</td>
+            <td class="t-price">+<span class="cur">KES</span>2,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Script Only</td>
+            <td class="t-desc">Written script and shot list, no production</td>
+            <td class="t-price"><span class="cur">KES</span>5,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Voice Over Only</td>
+            <td class="t-desc">Recorded voice over delivered as a clean audio file</td>
+            <td class="t-price"><span class="cur">KES</span>5,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ════════ USAGE RIGHTS ════════ -->
+    <section class="sec">
+      <div class="sec-title">Usage Rights</div>
+      <table>
+        <thead>
+          <tr><th>Usage</th><th>Detail</th><th class="num">Fee</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="t-name">Organic Social</td>
+            <td class="t-desc">Reposting on your own channels, 12 months</td>
+            <td class="t-price">Included</td>
+          </tr>
+          <tr>
+            <td class="t-name">Website Use</td>
+            <td class="t-desc">Product pages, store listings, and email, 12 months</td>
+            <td class="t-price">Included</td>
+          </tr>
+          <tr>
+            <td class="t-name">Paid Advertising</td>
+            <td class="t-desc">Boosting or running the content as an ad, per 90 days</td>
+            <td class="t-price">+<span class="cur">KES</span>10,000</td>
+          </tr>
+          <tr>
+            <td class="t-name">Broadcast &amp; Print</td>
+            <td class="t-desc">TV, billboard, or print placement</td>
+            <td class="t-price">Quoted</td>
+          </tr>
+          <tr>
+            <td class="t-name">Category Exclusivity</td>
+            <td class="t-desc">I decline competing products for 30 to 90 days</td>
+            <td class="t-price">+50% to 100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ════════ TERMS ════════ -->
+    <section class="sec">
+      <div class="sec-title">How We Work</div>
+      <div class="terms">
+        <div class="term"><strong>Booking.</strong> 50 percent deposit confirms the slot, balance due on delivery.</div>
+        <div class="term"><strong>Payment.</strong> M-Pesa or bank transfer. Invoice provided.</div>
+        <div class="term"><strong>Turnaround.</strong> Shorts in 5 working days, reviews in 7 to 10 working days from receiving the product.</div>
+        <div class="term"><strong>Revisions.</strong> Two rounds included on every deliverable.</div>
+        <div class="term"><strong>Samples.</strong> Review units are kept for long term testing unless we agree otherwise upfront.</div>
+        <div class="term"><strong>Disclosure.</strong> Paid partnerships are labelled as required by each platform.</div>
+      </div>
+    </section>
+
+    <!-- ════════ INTEGRITY ════════ -->
+    <section class="sec">
+      <div class="callout">
+        <div class="callout-title">Editorial Integrity</div>
+        <p>
+          My audience trusts my reviews, and that trust is exactly what you are paying for. Reviews
+          reflect my genuine experience with the product. If I hit a problem, I raise it with you
+          privately before anything goes live so we can address it, change the angle, or agree not to
+          publish. You will never be blindsided, and my audience will never be sold something I do not
+          stand behind.
+        </p>
+      </div>
+    </section>
+
+    <!-- ════════ FOOTER ════════ -->
+    <div class="foot">
+      <div class="foot-qr"><img src="assets/qr-site.svg" alt="QR to bloodyactor.com"></div>
+      <div class="foot-copy">
+        <div class="foot-tag">Scan ▸ See the work</div>
+        <div class="foot-line">bloodyactor.com</div>
+        <div class="foot-sub">Past reviews, campaign work, and full channel numbers. International brands: USD rates on request.</div>
+      </div>
+      <div class="foot-valid">Rates valid to<br>31 Dec 2026</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
